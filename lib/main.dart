@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iot_sau_first_project/Views/login_ui.dart';
+import 'package:iot_sau_first_project/Views/signup_ui.dart';
 import 'package:iot_sau_first_project/Views/welcome_ui.dart';
 
 void main(){
