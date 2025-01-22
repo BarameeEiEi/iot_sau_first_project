@@ -1,6 +1,8 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:iot_sau_first_project/Views/Login_ui.dart';
+import 'package:iot_sau_first_project/Views/signup_ui.dart';
 
 class WelcomeUI extends StatefulWidget {
   const WelcomeUI({super.key});
@@ -49,7 +51,14 @@ class _WelcomeUIState extends State<WelcomeUI> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                             OutlinedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => LoginUi( )
+                                        ),
+                                    );
+                                },
                                 child: Text(
                                     'Login' ,
                                     style: TextStyle(
@@ -72,7 +81,14 @@ class _WelcomeUIState extends State<WelcomeUI> {
                         width: MediaQuery.of(context).size.width * 0.035,
                     ),
                                 ElevatedButton(
-                                    onPressed: () {},
+                                   onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => SignupUI()
+                                        ),
+                                    );
+                                },
                                     child: Text(
                                         'Sign Up',
                                         style: TextStyle(
